@@ -1,129 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="29" passed="29">
+<testng-results skipped="0" failed="0" total="44" passed="44">
   <reporter-output>
   </reporter-output>
-  <suite name="net.bigpoint.assessment.gasstation.implementation.StationTest" duration-ms="7034" started-at="2013-07-20T13:48:50Z" finished-at="2013-07-20T13:48:57Z">
+  <suite name="net.bigpoint.assessment.gasstation.implementation.StationTest" duration-ms="14526" started-at="2013-07-23T00:14:48Z" finished-at="2013-07-23T00:15:02Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="7034" started-at="2013-07-20T13:48:50Z" finished-at="2013-07-20T13:48:57Z">
+    <test name="Command line test" duration-ms="14526" started-at="2013-07-23T00:14:48Z" finished-at="2013-07-23T00:15:02Z">
       <class name="net.bigpoint.assessment.gasstation.implementation.StationTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="setUp" is-config="true" duration-ms="39" started-at="2013-07-20T09:18:50Z" finished-at="2013-07-20T09:18:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="setUp" is-config="true" duration-ms="40" started-at="2013-07-22T19:44:48Z" finished-at="2013-07-22T19:44:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGasPumps()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testGasPumps" duration-ms="6" started-at="2013-07-20T09:18:50Z" finished-at="2013-07-20T09:18:50Z">
+        <test-method status="PASS" signature="testGasPumps()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testGasPumps" duration-ms="6" started-at="2013-07-22T19:44:48Z" finished-at="2013-07-22T19:44:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGasPumps -->
-        <test-method status="PASS" signature="testPrice()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testPrice" duration-ms="4" started-at="2013-07-20T09:18:50Z" finished-at="2013-07-20T09:18:50Z">
+        <test-method status="PASS" signature="testPrice()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testPrice" duration-ms="6" started-at="2013-07-22T19:44:48Z" finished-at="2013-07-22T19:44:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPrice -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="828" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:51Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="12250" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="5375" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:56Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="605" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="4936" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:55Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="11343" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="4273" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:55Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="12879" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="4233" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:55Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="10912" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="3854" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:54Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="9994" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="2857" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:53Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="9693" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="1998" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:52Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="9957" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="1800" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:52Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="9111" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGas" duration-ms="1127" started-at="2013-07-20T09:18:50Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:51Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="9241" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGas -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="1538" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="8141" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="6534" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="7881" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="7508" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="7160" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="6826" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="6321" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="4738" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="5670" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="3989" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="1731" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="3376" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="2633" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="1555" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGas()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGas" duration-ms="883" started-at="2013-07-22T19:44:48Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:44:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyGas -->
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="103" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="104" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:56Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="714" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="1302" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="815" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="1404" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="1015" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="1199" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="909" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="891" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="1111" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="995" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="594" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="1095" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="1310" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="776" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="1208" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="671" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:56Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="1411" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="568" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:56Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="1510" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="261" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:56Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="476" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="463" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:56Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="270" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="358" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:56Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="372" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testBuyGasDepleted" duration-ms="153" started-at="2013-07-20T09:18:56Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:56Z">
+        <test-method status="PASS" signature="testBuyGasDepleted()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testBuyGasDepleted" duration-ms="168" started-at="2013-07-22T19:45:01Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyGasDepleted -->
-        <test-method status="PASS" signature="testNoGasException()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testNoGasException" duration-ms="5" started-at="2013-07-20T09:18:57Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testNoGasException()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testNoGasException" duration-ms="4" started-at="2013-07-22T19:45:02Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNoGasException -->
-        <test-method status="PASS" signature="testTooExpensiveException()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@6ab45b29]" name="testTooExpensiveException" duration-ms="15" started-at="2013-07-20T09:18:57Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-20T09:18:57Z">
+        <test-method status="PASS" signature="testTooExpensiveException()[pri:0, instance:net.bigpoint.assessment.gasstation.implementation.StationTest@66cd1779]" name="testTooExpensiveException" duration-ms="2" started-at="2013-07-22T19:45:02Z" depends-on-methods="net.bigpoint.assessment.gasstation.implementation.StationTest.testGasPumps" finished-at="2013-07-22T19:45:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTooExpensiveException -->

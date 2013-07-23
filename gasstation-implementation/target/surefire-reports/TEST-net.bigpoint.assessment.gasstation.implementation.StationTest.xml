@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="7.621" errors="0" skipped="0" tests="29" name="net.bigpoint.assessment.gasstation.implementation.StationTest">
+<testsuite failures="0" time="15.117" errors="0" skipped="0" tests="44" name="net.bigpoint.assessment.gasstation.implementation.StationTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64"/>
@@ -58,33 +58,48 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.006" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testGasPumps"/>
-  <testcase time="0.004" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testPrice"/>
-  <testcase time="0.78" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="1.126" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="1.797" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="1.986" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="2.842" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="3.832" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="4.207" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="4.242" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="4.904" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="5.333" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
-  <testcase time="0.05" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.153" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.26" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.358" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.461" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.563" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.664" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.767" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.87" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.973" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="1.075" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="1.178" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="1.28" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="1.383" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="1.486" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
-  <testcase time="0.008" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testNoGasException"/>
-  <testcase time="0.012" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testTooExpensiveException"/>
+  <testcase time="0.005" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testGasPumps"/>
+  <testcase time="0.006" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testPrice"/>
+  <testcase time="0.52" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="0.88" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="1.551" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="1.717" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="2.622" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="3.363" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="3.971" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="4.718" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="5.649" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="6.295" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="6.476" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="6.798" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="7.122" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="7.469" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="7.84" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="8.079" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="9.048" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="9.183" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="9.623" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="9.889" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="9.921" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="10.834" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="11.26" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="12.166" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="12.799" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGas"/>
+  <testcase time="0.066" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.169" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.269" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.372" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.475" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.577" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.68" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.786" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.888" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.992" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="1.093" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="1.195" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="1.298" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="1.4" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="1.503" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testBuyGasDepleted"/>
+  <testcase time="0.004" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testNoGasException"/>
+  <testcase time="0.002" classname="net.bigpoint.assessment.gasstation.implementation.StationTest" name="testTooExpensiveException"/>
 </testsuite>

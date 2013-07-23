@@ -19,9 +19,6 @@ import net.bigpoint.assessment.gasstation.exceptions.NotEnoughGasException;
  * @author gianksp
  */
 public class Station implements GasStation{
-
-    //Static to make it possible to synchronize between instances of Myclass
-    private static Object sync = new Object();
     
     /**
      * Logger instance. For assessment purposes logging will be extensively used.
@@ -133,7 +130,7 @@ public class Station implements GasStation{
      * @throws NotEnoughGasException
      * @throws GasTooExpensiveException 
      */
-    public synchronized double buyGas(GasType type, double amountInLiters, double maxPricePerLiter) throws NotEnoughGasException, GasTooExpensiveException {
+    public double buyGas(GasType type, double amountInLiters, double maxPricePerLiter) throws NotEnoughGasException, GasTooExpensiveException {
 
             double pricePerLiter = prices.get(type);
             double price = 0;
@@ -145,22 +142,23 @@ public class Station implements GasStation{
             }
 
             //Iterate through pumps
-            Iterator itr = pumps.iterator();
-            while(itr.hasNext()) {
-                GasPump pump = (GasPump) itr.next();
+            for (GasPump pump : pumps){
                 //This pump serves the gas type requested
                 if (pump.getGasType().equals(type)) {
-                    //This pump has enough fuel to serve
-                    if (pump.getRemainingAmount() >= amountInLiters) {
-                        pump.pumpGas(amountInLiters);
-                        price = amountInLiters * pricePerLiter;
-                        LOG.info("[PUMP STATISTICS] amount remaining: "+pump.getRemainingAmount());
-                        revenue += price;
-                        salesNumber++;
-                        break;
+                    //Lock it while using so no other Thread has access
+                    synchronized(pump){
+                        //This pump has enough fuel to serve
+                        if (pump.getRemainingAmount() >= amountInLiters) {
+                                pump.pumpGas(amountInLiters);
+                                price = amountInLiters * pricePerLiter;
+                                LOG.info("[PUMP STATISTICS] amount remaining: "+pump.getRemainingAmount());
+                                revenue += price;
+                                salesNumber++;
+                                break;
+                        }
                     }
                 }
-            }   
+            }
 
             //We finalized iterating through every available pump and we know the client has enough money
             //If by the time we get here price is still 0 means no pump was available to attend it
