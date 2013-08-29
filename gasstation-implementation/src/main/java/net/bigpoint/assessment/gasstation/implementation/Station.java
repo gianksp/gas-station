@@ -6,6 +6,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Logger;
 import net.bigpoint.assessment.gasstation.GasPump;
 import net.bigpoint.assessment.gasstation.GasStation;
@@ -28,32 +33,32 @@ public class Station implements GasStation{
     /**
      * Collection of Gas Pumps this station has.
      */
-    private Collection<GasPump> pumps = new ArrayList<GasPump>();
+    private CopyOnWriteArrayList<GasPump> pumps = new CopyOnWriteArrayList<GasPump>();
     
     /**
      * Map with list of gas types and corresponding prices.
      */
-    private Map<GasType, Double> prices = new HashMap<GasType, Double>();
+    private ConcurrentMap<GasType, Double> prices = new ConcurrentHashMap<GasType, Double>();
     
     /**
      * Total revenue of the station.
      */
-    private double revenue = 0;
+    private AtomicLong revenue = new AtomicLong(0);
     
     /**
      * Total sales of the station.
      */
-    private int salesNumber = 0;
+    private AtomicInteger salesNumber = new AtomicInteger(0);
     
     /**
      * Total transactions canceled because of no gas.
      */
-    private int cancellationNoGas = 0;
+    private AtomicInteger cancellationNoGas = new AtomicInteger(0);
     
     /**
      * Total transactions canceled because of too expensive gas.
      */
-    private int cancellationTooExpensive = 0;
+    private AtomicInteger cancellationTooExpensive = new AtomicInteger(0);
 
     /**
      * Get collection of Gas Pumps this station has.
@@ -76,7 +81,7 @@ public class Station implements GasStation{
      * @return total revenue
      */
     public double getRevenue() {
-        return this.revenue;
+        return new Double(this.revenue.doubleValue());
     }
 
     /**
@@ -84,7 +89,7 @@ public class Station implements GasStation{
      * @return total sales
      */
     public int getNumberOfSales() {
-        return this.salesNumber;
+        return new Integer(this.salesNumber.get());
     }
 
     /**
@@ -92,7 +97,7 @@ public class Station implements GasStation{
      * @return total canceled because of no gas
      */
     public int getNumberOfCancellationsNoGas() {
-        return this.cancellationNoGas;
+        return new Integer(this.cancellationNoGas.get());
     }
 
     /**
@@ -100,7 +105,7 @@ public class Station implements GasStation{
      * @return total canceled because of too expensive
      */
     public int getNumberOfCancellationsTooExpensive() {
-        return this.cancellationTooExpensive;
+        return new Integer(this.cancellationTooExpensive.get());
     }
     
     /**
@@ -137,7 +142,7 @@ public class Station implements GasStation{
 
             //Validate price per liter. If the current price is higher than maxPricePerLiter param, throw exception
             if (pricePerLiter > maxPricePerLiter) {
-                cancellationTooExpensive++;
+                cancellationTooExpensive.addAndGet(1);
                 throw new GasTooExpensiveException();
             }
 
@@ -152,8 +157,8 @@ public class Station implements GasStation{
                                 pump.pumpGas(amountInLiters);
                                 price = amountInLiters * pricePerLiter;
                                 LOG.info("[PUMP STATISTICS] amount remaining: "+pump.getRemainingAmount());
-                                revenue += price;
-                                salesNumber++;
+                                revenue.addAndGet(new Double(price).longValue());
+                                salesNumber.addAndGet(1);
                                 break;
                         }
                     }
@@ -166,7 +171,7 @@ public class Station implements GasStation{
             //kind of fuel within the station, either way, throw NotEnoughGasException for the case.
             //The GasStation interface should include more exceptions for this method
             if (price == 0 && amountInLiters > 0){
-                cancellationNoGas++;
+                cancellationNoGas.addAndGet(1);
                 throw new NotEnoughGasException();        
             }
 

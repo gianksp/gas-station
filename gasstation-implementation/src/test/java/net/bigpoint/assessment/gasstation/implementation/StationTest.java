@@ -92,7 +92,7 @@ public class StationTest {
     public void testGasPumps() {
         long idThread = Thread.currentThread().getId();
         LOG.info("[testGasPumps] Adding gas pumps. Current Thread: "+idThread);
-        GasPump pumpDiesel1 = new GasPump(GasType.DIESEL, minLiters);
+        GasPump pumpDiesel1 = new GasPump(GasType.DIESEL, defaultLiters);
         GasPump pumpRegular1 = new GasPump(GasType.REGULAR, defaultLiters);
         GasPump pumpSuper1 = new GasPump(GasType.SUPER, defaultLiters);
         station.addGasPump(pumpDiesel1);
@@ -103,10 +103,11 @@ public class StationTest {
     }
 
     /**
-     * Test of buyGas method, of class Station. We invoke this test from 25 different
-     * threads simultaneously.
+     * Test of buyGas method, of class Station. We invoke this test from 1000 different
+     * threads simultaneously. We don't test with a higher number yet in order to keep
+     * compilation time low (disable test on compile if needed)
      */
-    @Test(threadPoolSize = 25, invocationCount = 25, dependsOnMethods = {"testGasPumps"})
+    @Test(threadPoolSize = 1000, invocationCount = 1000, dependsOnMethods = {"testGasPumps"})
     public void testBuyGas() throws Exception {
         long idThread = Thread.currentThread().getId();
         LOG.info("[testBuyGas] Buying gas. Current Thread: "+idThread);
@@ -131,7 +132,7 @@ public class StationTest {
      * the first found pump of the given type has no capacity to serve (not enough gas), check
      * if there are more pumps available with that gas type that can within the station.
      */
-    @Test(threadPoolSize = 15, invocationCount = 15, dependsOnMethods = {"testGasPumps"})
+    @Test(threadPoolSize = 1000, invocationCount = 1000, dependsOnMethods = {"testGasPumps"})
     public void testBuyGasDepleted() throws Exception {
         long idThread = Thread.currentThread().getId();
         boolean success = false;
